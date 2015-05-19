@@ -10,10 +10,13 @@ namespace _1_Practica
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hola Mundo!");
-            Console.WriteLine("Melissa Azofeifa");
+            //Console.WriteLine("Hola Mundo!");
+            //Console.WriteLine("Melissa Azofeifa");
+            //Console.ReadKey();
+
+            Fibonacci ob1 = new Fibonacci();
+            Console.WriteLine(ob1.Calcular(4));
             Console.ReadKey();
-            
         }
     }
 }
