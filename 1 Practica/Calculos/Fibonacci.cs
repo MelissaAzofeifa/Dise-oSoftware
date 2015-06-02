@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _1_Practica
-{
-    class Fibonacci
+//se quitó el nameSpace para que pueda ser leído en clases de otros paquetes.
+
+    public class Fibonacci
     {
        
 
@@ -42,4 +42,4 @@ namespace _1_Practica
            return Calcular (n-1) + Calcular (n-2);
         }
     }
-}
+

@@ -11,11 +11,10 @@ namespace _1_Practica
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Hola Mundo!");
-            //Console.WriteLine("Melissa Azofeifa");
-            //Console.ReadKey();
-
+            
+            //Calculos.Fibonacci() ob2 = new Calculos.Fibonacci();
             Fibonacci ob2 = new Fibonacci();
+            
             ArrayList MyAL1 = new ArrayList();
             ArrayList MyAL2 = new ArrayList();
             MyAL1.Add(4);
@@ -26,25 +25,34 @@ namespace _1_Practica
             MyAL1.Add(25);
 
             MyAL2 = ob2.arrayL(MyAL1);
-            //Console.WriteLine(ob2.arrayL(MyAL1));
-            //Console.ReadKey();
+         
 
+            //imprime metodo
             imprimirResultado(MyAL2);
 
-            //Fibonacci ob1 = new Fibonacci();
-            //Console.WriteLine(ob1.Calcular(4));
-            //Console.ReadKey();
+            Base_de_Datos.ListaNum ob3 = new Base_de_Datos.ListaNum();
+            ob3.Agregar(1);
+            ob3.Agregar(999);
+            ob3.Agregar(57);
+            ob3.Agregar(23);
+
+            int cantidad = ob3.ObtenerCantidad();
+            Console.WriteLine("Cantidad: " + cantidad);
+            Console.ReadKey();
+            
         }
 
         private static void imprimirResultado(ArrayList MyAL2)
         {
+            Console.WriteLine("ArrayList: ");
+
             foreach (int obj in MyAL2)
             {
-
                 Console.WriteLine(obj);
-
             }
             Console.ReadKey();
         }
+
+        
     }
 }
