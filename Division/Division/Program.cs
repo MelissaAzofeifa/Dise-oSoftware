@@ -11,11 +11,15 @@ namespace Division
         static void Main(string[] args)
         {
             CalculadoraBoundary elLimite = new CalculadoraBoundary();
-            double divisor = elLimite.ObtenerDivisor();
             double dividendo = elLimite.ObtenerDividendo();
-
+            double divisor = elLimite.ObtenerDivisor();
+            
             CalculadoraController laControladora = new CalculadoraController();
-            laControladora.CoordineLaDivision(dividendo, divisor);
+            string resultado = laControladora.CoordineLaDivision(dividendo, divisor);
+
+            elLimite.MostrarResultado(resultado);
         }
+
+        
     }
 }

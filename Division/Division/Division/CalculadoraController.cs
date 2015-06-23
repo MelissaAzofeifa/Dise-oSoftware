@@ -12,7 +12,7 @@ namespace Division
         {
             CalculadoraEntity laCalculadora = new CalculadoraEntity();
 
-            double resultado = laCalculadora.Dividir(divisor, dividendo);
+            double resultado = laCalculadora.Dividir(dividendo, divisor);
             string resultadoString = resultado.ToString();
 
             return resultadoString;
