@@ -10,9 +10,12 @@ namespace Division
     {
         public double ObtenerDivisor()
         {
+            
+            
             Console.WriteLine("Deme el divisor");
+            double respuesta;
             string divisor = Console.ReadLine();
-            double respuesta = double.Parse(divisor);
+            respuesta = double.Parse(divisor);
             return respuesta;
         }
 

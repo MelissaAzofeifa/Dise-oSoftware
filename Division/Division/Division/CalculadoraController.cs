@@ -8,12 +8,29 @@ namespace Division
 {
     class CalculadoraController
     {
-       public string CoordineLaDivision(double dividendo, double divisor)
+       public string CoordineLaDivision()
         {
-            CalculadoraEntity laCalculadora = new CalculadoraEntity();
+            
+            CalculadoraBoundary elLimite = new CalculadoraBoundary();
+            string resultadoString;
 
-            double resultado = laCalculadora.Dividir(dividendo, divisor);
-            string resultadoString = resultado.ToString();
+            try
+            {
+                
+                double dividendo = elLimite.ObtenerDividendo();
+                double divisor = elLimite.ObtenerDivisor();
+
+                CalculadoraEntity laCalculadora = new CalculadoraEntity();
+                double resultado = laCalculadora.Dividir(dividendo, divisor);
+                resultadoString = resultado.ToString();
+            }
+            catch (Exception)
+            {
+                
+                resultadoString = "error";
+            }
+
+            elLimite.MostrarResultado(resultadoString);
 
             return resultadoString;
         }
