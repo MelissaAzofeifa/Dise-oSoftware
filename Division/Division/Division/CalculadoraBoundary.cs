@@ -8,10 +8,17 @@ namespace Division
 {
     class CalculadoraBoundary
     {
-        double ObtenerDivisor()
+        public double ObtenerDivisor()
         {
             string divisor = Console.ReadLine();
             double respuesta = double.Parse(divisor);
+            return respuesta;
+        }
+
+        public double ObtenerDividendo()
+        {
+            string dividendo = Console.ReadLine();
+            double respuesta = double.Parse(dividendo);
             return respuesta;
         }
     }
