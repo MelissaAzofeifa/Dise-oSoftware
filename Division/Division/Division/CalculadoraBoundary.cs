@@ -27,7 +27,7 @@ namespace Division
 
         internal void MostrarResultado(string resultado)
         {
-            Console.WriteLine(resultado);
+            Console.WriteLine("El resultado es: "+resultado);
             Console.ReadLine();
         }
     }
